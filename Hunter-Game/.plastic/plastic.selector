@@ -1,0 +1,4 @@
+repository "Hunter-Game/Hunter-Game@5773441145203@cloud"
+  path "/"
+    br "/main"
+    co "/main"
