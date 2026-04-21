@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6113579942407135571
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pow_{-6113579942407135571}
+  m_AudioClip: {fileID: 8300000, guid: 3214bc95725a33043b4f53bbc9c9f82f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2958822105420228522
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Kapow_{-2958822105420228522}
+  m_AudioClip: {fileID: 8300000, guid: 1871e8975828e3d4c9d83c75577cd58b, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1279547731246963759
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bang_{-1279547731246963759}
+  m_AudioClip: {fileID: 8300000, guid: ddeafc9327c657440ae305e0c73237e2, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1032143898775814629
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Chapow_{-1032143898775814629}
+  m_AudioClip: {fileID: 8300000, guid: b3779418796edf44ab9dcae43a065f81, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1063546766827117242
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pew_{1063546766827117242}
+  m_AudioClip: {fileID: 8300000, guid: eb74855b7d923e14494a2e98a1bd553d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2196244236043189368
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Gunshot_{2196244236043189368}
+  m_AudioClip: {fileID: 8300000, guid: 4beec88fc52ed794891b39ca823e0d71, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4206047947967684805
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blam_{4206047947967684805}
+  m_AudioClip: {fileID: 8300000, guid: cfd103485a715e641b88d00f3d82efc3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GunSoundRandomizer
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 2196244236043189368}
+  - {fileID: -1279547731246963759}
+  - {fileID: -6113579942407135571}
+  - {fileID: 4206047947967684805}
+  - {fileID: -2958822105420228522}
+  - {fileID: 1063546766827117242}
+  - {fileID: -1032143898775814629}
+  m_AvoidRepeatingLast: 6
+  m_PlaybackMode: 1
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
