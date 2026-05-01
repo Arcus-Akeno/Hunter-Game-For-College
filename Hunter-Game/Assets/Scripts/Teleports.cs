@@ -7,6 +7,7 @@ public class Teleports : MonoBehaviour
     public Transform player;
     public Transform StartLocation;
     public Transform Location1;
+    public Transform Location2;
     private AudioSource AudioSource;
 
     
@@ -24,13 +25,20 @@ public class Teleports : MonoBehaviour
         player.transform.position = Location1.transform.position;
 
     }
-    public KeyCode Teleport1;
-    //left
-    public KeyCode Teleport2;
-    //right
-     void Update()
+    public void TeleportLocation2()
+    {
+        player.transform.position = Location2.transform.position;
+
+    }
+    public KeyCode TeleportMid;
+    //Is Start Location
+    public KeyCode TeleportLeft;
+    //Is location 1
+    public KeyCode TeleportRight;
+    //Is location 2
+    void Update()
      {
-        if (Input.GetKeyDown(Teleport2))
+        if (Input.GetKeyDown(TeleportMid))
         {
             player.transform.position = StartLocation.transform.position;
 
@@ -38,10 +46,16 @@ public class Teleports : MonoBehaviour
             AudioSource.Play();
         }
 
+        if (Input.GetKeyDown(TeleportRight))
+        {
+            player.transform.position = Location2.transform.position;
 
 
+            AudioSource.Play();
+        }
 
-        if (Input.GetKeyDown(Teleport1))
+
+        if (Input.GetKeyDown(TeleportLeft))
         {
             player.transform.position = Location1.transform.position;
             
