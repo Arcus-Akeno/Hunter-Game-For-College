@@ -10,7 +10,7 @@ public class BulletTracers : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Shooting();
+          //  Shooting();
         }
         
     }

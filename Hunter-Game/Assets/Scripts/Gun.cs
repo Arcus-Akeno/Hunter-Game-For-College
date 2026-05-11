@@ -6,6 +6,10 @@ public class Gun : MonoBehaviour
     public UnityEvent OnGunShoot;
     public float FireCooldown;
     private float CurrentCooldown;
+
+    [SerializeField]
+    AudioSource audio;
+
     void Start()
     {
         CurrentCooldown = FireCooldown;
@@ -19,10 +23,10 @@ public class Gun : MonoBehaviour
 
             if(CurrentCooldown <= 0f)
             {
-                OnGunShoot?.Invoke();
+
+                // OnGunShoot.Invoke();
+                audio.Play();
                 CurrentCooldown = FireCooldown;
-
-
             }
         }
 
