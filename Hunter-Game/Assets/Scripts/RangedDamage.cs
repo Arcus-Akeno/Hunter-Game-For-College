@@ -8,20 +8,20 @@ public class RangedDamage : MonoBehaviour
     public float Damage;
     public float BulletRange;
     private Transform PlayerCamera;
-    Gun GunScript;
-    Targets TargetsScript;
+   // Gun GunScript;
+    //Targets TargetsScript;
     private void Start()
     {
-        TargetsScript = GameObject.FindGameObjectWithTag("Targets").GetComponent<Targets>();
-         GunScript = GameObject.FindGameObjectWithTag("Gun").GetComponent<Gun>();
+        //TargetsScript = GameObject.FindGameObjectWithTag("Targets").GetComponent<Targets>();
+         //GunScript = GameObject.FindGameObjectWithTag("Gun").GetComponent<Gun>();
         PlayerCamera = Camera.main.transform;
     }
 
     // Update is called once per frame
-    public void shoot ()
+    public void Shoot()
     {
        
-        Debug.Log("shot");
+            Debug.Log("shot");
         Ray gunRay = new Ray(PlayerCamera.position, PlayerCamera.forward);
         if (Physics.Raycast(gunRay,out RaycastHit hitInfo, BulletRange))
         {
@@ -29,6 +29,7 @@ public class RangedDamage : MonoBehaviour
             if (hitInfo.collider.gameObject.TryGetComponent(out Targets enemy))
             {
                 enemy.Health -= Damage;
+                Debug.Log("Hits");
             }
             
         }
