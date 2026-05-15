@@ -9,7 +9,7 @@ public class Gun : MonoBehaviour
 
     [SerializeField]
     AudioSource audio;
-
+    RangedDamage RangedDamageScript;
     void Start()
     {
         CurrentCooldown = FireCooldown;
@@ -20,11 +20,11 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-
+            
             if(CurrentCooldown <= 0f)
             {
 
-                // OnGunShoot.Invoke();
+                OnGunShoot.Invoke();
                 audio.Play();
                 CurrentCooldown = FireCooldown;
             }
