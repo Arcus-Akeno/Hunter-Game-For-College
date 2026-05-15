@@ -1,0 +1,23 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.InputSystem;
+public class InputManager : MonoBehaviour
+{
+    public static InputManager instance;
+
+    public bool MenuOpenCloseInput { get; private set; }
+   
+    private PlayerInput PlayerInput;
+
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+
+}

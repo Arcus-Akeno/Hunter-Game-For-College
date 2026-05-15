@@ -30,6 +30,7 @@ public class RangedDamage : MonoBehaviour
             {
                 enemy.Health -= Damage;
                 Debug.Log("Hits");
+
             }
             
         }
