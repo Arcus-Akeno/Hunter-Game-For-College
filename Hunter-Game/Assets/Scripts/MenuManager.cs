@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject MainmenuCanvasGO;
     [SerializeField] private GameObject SettingsMenuCanvasGO;
     [Header("Player Scripts to deactivate on pause")]
-    [SerializeField] private CameraController CameraController;
+
     [SerializeField] private Gun Gun;
     
     private bool ispaused;
@@ -44,7 +44,7 @@ public class MenuManager : MonoBehaviour
         ispaused = true;
         Time.timeScale = 0f;
         Cursor.visible = true;
-        CameraController.enabled = false;
+        
         Gun.enabled = false;
 
 
@@ -56,7 +56,7 @@ public class MenuManager : MonoBehaviour
         ispaused = false;
         Time.timeScale = 1f;
         Cursor.visible = false;
-        CameraController.enabled = true;
+      
         Gun.enabled = true;
         CloseAllMenus();
     }

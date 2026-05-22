@@ -8,12 +8,10 @@ public class RangedDamage : MonoBehaviour
     public float Damage;
     public float BulletRange;
     private Transform PlayerCamera;
-   // Gun GunScript;
-    //Targets TargetsScript;
+   
     private void Start()
     {
-        //TargetsScript = GameObject.FindGameObjectWithTag("Targets").GetComponent<Targets>();
-         //GunScript = GameObject.FindGameObjectWithTag("Gun").GetComponent<Gun>();
+
         PlayerCamera = Camera.main.transform;
     }
 
