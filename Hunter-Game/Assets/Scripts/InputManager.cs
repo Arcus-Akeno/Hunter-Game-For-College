@@ -8,16 +8,22 @@ public class InputManager : MonoBehaviour
 
     public bool MenuOpenCloseInput { get; private set; }
    
-    private PlayerInput PlayerInput;
+    private PlayerInput playerInput;
 
-
+    private InputAction MenuOpenCloseAction;
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+        playerInput = GetComponent<PlayerInput>();
+        MenuOpenCloseAction = playerInput.actions["MenuOpenClose"];
     }
 
+    private void Update()
+    {
+        MenuOpenCloseInput = MenuOpenCloseAction.WasPressedThisFrame();
+    }
 
 }

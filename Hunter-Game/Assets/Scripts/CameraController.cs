@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraController : MonoBehaviour
 {
+    public Slider sliderVertical;
+    public Slider sliderHorizontal;
     public float sensX;
     public float sensY;
 
@@ -11,7 +14,7 @@ public class CameraController : MonoBehaviour
     float yRotation;
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        
         Cursor.visible = false;
     }
 
